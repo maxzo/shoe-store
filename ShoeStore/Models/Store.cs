@@ -15,10 +15,5 @@ namespace ShoeStore.Models
         public string Name { get; set; }
         public string Address { get; set; }
         public virtual ICollection<Article> Articles { get; set; }
-
-        /*public Store()
-        {
-            this.Articles = new HashSet<Article>();
-        }*/
     }
 }

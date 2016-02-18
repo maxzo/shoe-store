@@ -10,6 +10,7 @@ namespace ShoeStore.Models
     [KnownType(typeof(PluralStoreResponseDTO))]
     [KnownType(typeof(SingleArticleResponseDTO))]
     [KnownType(typeof(PluralArticleResponseDTO))]
+    [KnownType(typeof(ErrorResponseDTO))]
     public class ResponseDTO
     {
         public bool success { get; set; }
