@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Serialization;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
