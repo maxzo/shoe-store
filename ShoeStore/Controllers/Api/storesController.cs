@@ -57,6 +57,7 @@ namespace ShoeStore.Controllers
 
         private bool IsAuthenticated()
         {
+            if (Request.Headers.Authorization == null) return false;
             string[] parts = UTF8Encoding.UTF8.GetString(Convert.FromBase64String(Request.Headers.Authorization.Parameter)).Split(':');
             return parts.Length == 2 && parts[0] == "my_user" && parts[1] == "my_password";
         }
